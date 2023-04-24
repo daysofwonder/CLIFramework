@@ -84,6 +84,8 @@ class Table
 
     protected $footer;
 
+    protected $columnWidth;
+
     public function __construct()
     {
         $this->style = new TableStyle;

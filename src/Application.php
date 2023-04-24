@@ -103,6 +103,7 @@ class Application extends CommandBase implements CommandInterface
      */
     protected $globalConfig;
 
+    protected $loader;
 
     /** @var bool */
     protected $commandAutoloadEnabled = false;
