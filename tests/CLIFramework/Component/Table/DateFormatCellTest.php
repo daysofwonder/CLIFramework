@@ -11,7 +11,6 @@ class DateFormatCellTest extends TestCase
         $str = $dateFormatCell->format(0);
 
         // older icu does not output "at"
-        $this->assertRegExp('/Wednesday, December \d+, \d+( at)? \d:00:00 PM Pacific Standard Time/', $str);
+        $this->assertMatchesRegularExpression('/Wednesday, December \d+, \d+( at)? \d:00:00 PM Pacific Standard Time/', $str);
     }
 }
-

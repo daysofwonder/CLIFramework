@@ -44,7 +44,7 @@ ActionKit
         $this->assertEquals('#values',$lines[0]);
         array_shift($lines);
         foreach($lines as $line) {
-            $this->assertRegExp('/^\w{7}$/', $line);
+            $this->assertMatchesRegularExpression('/^\w{7}$/', $line);
         }
     }
 
@@ -66,4 +66,3 @@ ActionKit
     }
 
 }
-

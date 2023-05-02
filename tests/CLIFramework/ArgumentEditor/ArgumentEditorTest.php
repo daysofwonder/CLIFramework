@@ -22,6 +22,7 @@ class ArgumentEditorTest extends TestCase
         $editor = new ArgumentEditor(array('./configure','--enable-debug'));
         $editor->append('--enable-zip');
         $editor->removeRegExp('--enable');
+        $this->assertEquals("./configure", $editor->__toString() );
     }
 
     public function testReplaceRegExp() {
@@ -53,4 +54,3 @@ class ArgumentEditorTest extends TestCase
         $this->assertEquals("'./configure' '--enable-debug'", $editor->__toString() );
     }
 }
-

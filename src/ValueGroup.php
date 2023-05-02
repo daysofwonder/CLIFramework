@@ -15,16 +15,16 @@ class ValueGroup extends ArrayObject
         return array_keys($this->getArrayCopy());
     }
 
-    public function append($val)
+    public function append(mixed $val) : void
     {
         parent::append($val);
-        return $this;
     }
 
 
     public function add($val)
     {
         parent::append($val);
+
         return $this;
     }
 }

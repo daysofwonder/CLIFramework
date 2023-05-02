@@ -15,7 +15,7 @@ use CLIFramework\Application;
 use CLIFramework\ServiceContainer;
 use PHPUnit\Framework\TestCase;
 
-class DaemonExtensionTest extends TestCase 
+class DaemonExtensionTest extends TestCase
 {
     private $extension;
 
@@ -37,7 +37,9 @@ class DaemonExtensionTest extends TestCase
 
     public function testRun()
     {
+
         $this->command->executeWrapper(array());
+        $this->assertTrue(true); // No execption thrown
     }
 
     protected function tearDown(): void

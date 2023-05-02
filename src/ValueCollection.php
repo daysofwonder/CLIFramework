@@ -91,7 +91,7 @@ class ValueCollection implements IteratorAggregate
         return json_encode($this->groups);
     }
 
-    public function getIterator()
+    public function getIterator() : \Traversable
     {
         return new ArrayIterator($this->groups);
     }
